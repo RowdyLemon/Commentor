@@ -1,0 +1,72 @@
+body
+{
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../Images/cartographer.png");
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#Header
+{
+    background-color: #24251f;
+    font-size: 36px;
+    width: 100%;
+    padding: 12px 0px;
+}
+
+#loginArea
+{
+    text-align: center;
+}
+
+#username, #password, #login_button, #password_button
+{
+    padding: 5px 0px;
+}
+
+#username
+{
+    margin-top: 20px;
+}
+
+#input_username, #input_password
+{
+    height: 30px;
+    width: 250px;
+    font-size: 24px;
+}
+
+#submit_login, #submit_register
+{
+    width: 400px;
+    font-size: 24px;
+}
+
+#submit_login:hover, #submit_register:hover
+{
+    box-shadow: 0px 0px 10px Blue;
+}
+
+/* Green for valid */
+input.valid_input
+{
+    background:hsl(120, 50%, 90%);
+    border-color:hsl(120, 50%, 50%);
+}
+
+/* Green for invalid */
+input.invalid_input
+{
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
+}
+
+/* White for empty */
+input.empty
+{
+    border-color:hsl(145, 100%, 0%, 1);
+    background:hsl(360, 100%, 100%, 1);
+}
