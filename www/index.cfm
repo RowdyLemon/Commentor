@@ -16,7 +16,7 @@
 				<li><a href="">Oldest</a></li>
 				<li><a href="">Newest</a></li>
 				<li><a href="">Popular</a></li>
-				<li><a href="">New Post</a></li>
+				<li><a href="post.cfm">New Post</a></li>
 				<cfif session.allowin>
 					<li>
 						<a href="../cfml/logout.cfm">Logout</a>
