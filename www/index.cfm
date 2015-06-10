@@ -16,8 +16,8 @@
 				<li><a href="">Oldest</a></li>
 				<li><a href="">Newest</a></li>
 				<li><a href="">Popular</a></li>
-				<li><a href="post.cfm">New Post</a></li>
 				<cfif session.allowin>
+					<li><a href="post.cfm">New Post</a></li>
 					<li>
 						<a href="../cfml/logout.cfm">Logout</a>
 					</li>
@@ -30,7 +30,21 @@
 	</nav>
 
 	<main id="comments">
-
+		<cfquery name="threads" datasource="commentor">
+			SELECT * 
+			FROM thread
+		</cfquery>
+		<ul id="threads">
+			<cfoutput>
+				<cfloop query="threads">
+					<li>
+						#threads.user_name#</br>
+						<a href="thread.cfm?threadID=#threads.threadID#&amp;title=#threads.title#&amp;content=#threads.content#&amp;post_date=#threads.post_date#&amp;username=#threads.user_name#" >#threads.title#</a>
+						</br>
+					</li>
+				</cfloop>
+			</cfoutput>
+		</ul>
 	</main>
 
 </body>
