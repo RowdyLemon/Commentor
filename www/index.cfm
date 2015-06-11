@@ -28,7 +28,7 @@
 	</nav>
 
 	<main id="comments">
-<!--- 		<cfquery name="threads" datasource="commentor">
+ 		<cfquery name="threads" datasource="commentor">
 			SELECT *
 			FROM thread
 		</cfquery>
@@ -42,6 +42,6 @@
 					</li>
 				</cfloop>
 			</cfoutput>
-		</ul>  --->
+		</ul>  
 	</main>
 </layout:page>

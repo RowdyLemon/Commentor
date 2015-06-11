@@ -11,7 +11,7 @@
     <body>
 <cfelse>
     <footer id="Footer">
-        <a href="http://localhost/Commentor/www/">HOME</a>
+        <a href="index.cfm">HOME</a>
     </footer>
     </body>
     </html>
