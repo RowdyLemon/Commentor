@@ -20,11 +20,8 @@ body
 #nameAndLogout
 {
     float: right;
-}
-
-#navAccount
-{
-    margin: 0px 20px;
+    font-size: 28px;
+    padding-top: 5px;
 }
 
 #threads
@@ -61,9 +58,15 @@ body
     color: white;
 }
 
+#navAccount
+{
+    margin: 0px 20px;
+}
+
 #navAccount li
 {
     display: inline-block;
+    padding: 0px 0px 0px 14px;
 }
 
 #navAccount a

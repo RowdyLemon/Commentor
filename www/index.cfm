@@ -5,7 +5,7 @@
 		<div id="nameAndLogout">
 			<ul id="navAccount">
 				<cfif session.allowin>
-					<li>Welcome #session.user_name#</li>
+					<li><cfoutput>Welcome #session.user_name#</cfoutput></li>
 					<li><a href="../cfml/logout.cfm">Logout</a></li>
 				<cfelse>
 					<li><a href="login.cfm">Login</a></li>
