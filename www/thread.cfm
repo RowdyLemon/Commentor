@@ -22,7 +22,7 @@
 		<cfscript>
 			if(Ucase(content).endsWith("JPG"))
 			{
-				content = "<img src=" + content +" />";
+				content = "<img src=" & content & " />";
 			}
 		</cfscript>
 	</cfoutput>
