@@ -42,6 +42,6 @@
 					</li>
 				</cfloop>
 			</cfoutput>
-		</ul>  
+		</ul>
 	</main>
 </layout:page>

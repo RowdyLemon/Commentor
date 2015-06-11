@@ -2,10 +2,6 @@ USE [master]
 GO
 
 /****** Object:  Database [commentor]    Script Date: 6/11/2015 3:21:38 PM ******/
-DROP DATABASE [commentor]
-GO
-
-/****** Object:  Database [commentor]    Script Date: 6/11/2015 3:21:38 PM ******/
 CREATE DATABASE [commentor]
  CONTAINMENT = NONE
  ON  PRIMARY 
