@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>commentor</title>
-
-	<link href="../Stylesheets/index.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-	<header id="header">
-		<h1>The Daily Commentor</h1>
+<cfimport taglib="../customTags/" prefix="layout" />
+<layout:page>
+	<header id="Header">
+		The Daily Commentor
 	</header>
 
 	<nav  id="navBar">
@@ -30,8 +24,8 @@
 	</nav>
 
 	<main id="comments">
-		<cfquery name="threads" datasource="commentor">
-			SELECT * 
+		<!--- <cfquery name="threads" datasource="commentor">
+			SELECT *
 			FROM thread
 		</cfquery>
 		<ul id="threads">
@@ -44,9 +38,6 @@
 					</li>
 				</cfloop>
 			</cfoutput>
-		</ul>
+		</ul> --->
 	</main>
-
-</body>
-</html>
-
+</layout:page>

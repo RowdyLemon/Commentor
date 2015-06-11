@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="../Stylesheets/post.css">
-	<title>Post</title>
-</head>
-<body>
+<cfimport taglib="../customTags/" prefix="layout" />
+<layout:page>
+	<header id="Header">
+		Thread Submission
+	</header>
 	<form action="../cfml/user_post.cfm" method="POST">
 		Text Post</br>
 		<label id="">Title: <input type="text" name="title" id="title" required></label></br>
@@ -18,6 +16,4 @@
 		<label id="">Image URL: <input type="text" name="content" id="content" required></label></br>
 		<input type="submit" id="submit_image" name="submit_image" value="Submit">
 	</form>
-
-</body>
-</html>
+</layout:page>

@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
+<cfimport taglib="../customTags/" prefix="layout" />
+<layout:page>
 	<cfset id = url.threadID />
 	<cfset title = url.title />
 	<cfset content = url.content />
@@ -18,5 +15,4 @@
 	<cfoutput>#date#</cfoutput></br>
 
 	<cfoutput>#content#</cfoutput>
-</body>
-</html>
+</layout:page>
