@@ -158,3 +158,14 @@ input.empty
     border-color:hsl(145, 100%, 0%, 1);
     background:hsl(360, 100%, 100%, 1);
 }
+
+#image
+{
+    width: 600px;
+}
+
+#image img
+{
+    max-height: 100%;
+    max-width: 100%;
+}

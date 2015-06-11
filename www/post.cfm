@@ -1,5 +1,12 @@
 <cfimport taglib="../customTags/" prefix="layout" />
 <layout:page>
+	
+	<cfif !session.allowin>
+		<script>
+			self.location = "index.cfm";
+		</script>
+	</cfif>
+
 	<header id="Header">
 		Thread Submission
 	</header>
