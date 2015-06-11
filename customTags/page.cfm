@@ -10,7 +10,9 @@
         </head>
     <body>
 <cfelse>
-
+    <footer id="Footer">
+        <a href="http://localhost/Commentor/www/">HOME</a>
+    </footer>
     </body>
     </html>
 </cfif>
