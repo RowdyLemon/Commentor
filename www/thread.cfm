@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +15,15 @@
 			self.location = "index.cfm";
 		</script>
 	</cfif>
+=======
+<cfimport taglib="../customTags/" prefix="layout" />
+<layout:page>
+	<cfset id = url.threadID />
+	<cfset title = url.title />
+	<cfset content = url.content />
+	<cfset date = url.post_date />
+	<cfset username = url.username />
+>>>>>>> bcd5dcf7714da0f28dc542e428c5202d8ba7bf30
 
 	<cfif findNoCase("http", '#content#')>
 		<cfset content = "<img src=""" & #content# & """ />" />
@@ -24,5 +34,4 @@
 	<cfoutput>#date#</cfoutput></br>
 
 	<cfoutput>#content#</cfoutput>
-</body>
-</html>
+</layout:page>
