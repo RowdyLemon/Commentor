@@ -2,6 +2,16 @@
 <layout:page>
 	<header id="Header">
 		The Daily Commentor
+		<div id="nameAndLogout">
+			<ul id="navAccount">
+				<cfif session.allowin>
+					<li>Welcome #session.user_name#</li>
+					<li><a href="../cfml/logout.cfm">Logout</a></li>
+				<cfelse>
+					<li><a href="login.cfm">Login</a></li>
+				</cfif>
+			</ul>
+		</div>
 	</header>
 
 	<nav  id="navBar">
@@ -12,12 +22,6 @@
 				<li><a href="">Popular</a></li>
 				<cfif session.allowin>
 					<li><a href="post.cfm">New Post</a></li>
-					<li>
-						<a href="../cfml/logout.cfm">Logout</a>
-					</li>
-					<li>Welcome #session.user_name#</li>
-				<cfelse>
-					<li><a href="login.cfm">Login</a></li>
 				</cfif>
 			</ul>
 		</cfoutput>
