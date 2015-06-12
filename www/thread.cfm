@@ -34,7 +34,7 @@
 
 	<cfif session.allowin>	
 		<cfoutput>
-		<form action="" method="POST" name="submitComment">
+		<form action="" method="POST" id="submitComment">
 			<textarea name="commentName" id="commentName" rows="5" cols="70" required></textarea></br>
 			<input type="submit">
 		</form>
