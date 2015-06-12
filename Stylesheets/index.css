@@ -1,0 +1,78 @@
+body
+{
+	background-color: black;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+#header
+{
+	border-style: solid;
+	border-radius: 1em;
+	border-width: 1px;
+	border-color: white;
+	padding-left: 32px;
+	font-size: 20px;
+}
+
+#navBar
+{
+
+}
+
+#threads
+{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+#threads li
+{
+	border-style: solid;
+	border-radius: 1em;
+	border-width: 1px;
+	border-color: white;
+	padding-left: 32px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+#threads a
+{
+	text-decoration: none;
+	transition: .3s color;
+}
+
+#threads a:link, a:visited
+{
+	color: #8C8C8C;
+}
+
+#threads a:hover
+{
+	color: white;
+}
+
+#sorting li
+{
+	font-size: 20px;
+	display: inline-block;
+	padding-right: 25px;
+}
+
+#sorting a
+{
+	text-decoration: none;
+	transition: .3s color;
+}
+
+#sorting a:link, a:visited
+{
+	color: #8C8C8C;
+}
+
+#sorting a:hover
+{
+	color: white;
+}
